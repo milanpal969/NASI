@@ -1,10 +1,12 @@
-import React from "react";
+import React from 'react';
+import Header from './components/Header';
+import LandingPage from './pages/landing';
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <h1>Welcome to the NASI</h1>
+      <Header />
+      <LandingPage />
     </div>
   );
 }
-export default App;
