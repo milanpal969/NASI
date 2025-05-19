@@ -1,6 +1,6 @@
 import React from 'react';
 import { MoonIcon, SunIcon, MagnifyingGlassIcon } from '@heroicons/react/24/outline';
-// import logo from '../assets/logo.png';
+import logo from '../assets/nasi-logo.png';
 
 const navItems = ['Home', 'The Academy', 'Rules & Regulations', 'Fellowship', 'Publications', 'Membership', 'Contact Us'];
 
@@ -17,8 +17,8 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-14 items-center">
           <div className="flex items-center">
-            {/* <img src={logo} alt="Logo" className="h-6 w-auto" /> */}
-            <span className="ml-2 font-semibold text-blue-600 dark:text-blue-400 text-base">
+            <img src={logo} alt="Logo" className="h-12 w-auto" />
+            <span className="ml-2 font-semibold text-blue-600 w-45 h-auto dark:text-blue-400 text-base">
               The National Academy of Sciences, India
             </span>
           </div>
