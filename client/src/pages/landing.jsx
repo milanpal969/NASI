@@ -1,36 +1,43 @@
 import React from 'react';
-// import heroImage from '../assets/hero.jpg';
+import HeroSection from '../components/HeroSection';
+import AcademyIntro from '../components/AcademyIntro';
+import ProfileCard from '../components/ProfileCard';
+
 
 export default function LandingPage() {
+  const profiles = [
+    {
+      name: 'Prof. Meghnad Saha',
+      title: 'Founder President',
+      subtitle: 'The First Science Academy of India',
+      imgSrc: '/path/to/meghnad.jpg',
+    },
+    {
+      name: 'Prof. Vinod K. Singh',
+      title: 'President',
+      subtitle: "Leading the Academy's mission to foster scientific excellence",
+      imgSrc: '/path/to/vinod.jpg',
+    },
+  ];
+
   return (
     <main className="pt-14">
-      <div
-        className="h-screen bg-cover bg-center flex items-center justify-center"
-        // style={{ backgroundImage: `url(${heroImage})` }}
-      >
-        <div className="text-center bg-black bg-opacity-50 p-6 rounded-lg">
-          <h1 className="text-3xl sm:text-4xl font-bold text-white">
-            The National Academy of Sciences, India
-          </h1>
-          <p className="mt-3 text-base sm:text-lg text-gray-200">
-            Advancing scientific research and fostering excellence since 1930
-          </p>
-          <div className="mt-5 flex justify-center space-x-3">
-            <a
-              href="#"
-              className="px-5 py-2 bg-blue-600 text-white text-sm rounded hover:bg-blue-700 transition"
-            >
-              Explore Fellowship
-            </a>
-            <a
-              href="#"
-              className="px-5 py-2 bg-white text-gray-800 text-sm rounded hover:bg-gray-100 transition"
-            >
-              Learn More
-            </a>
-          </div>
+      <HeroSection />
+      <div className="mt-16" /> {/* spacing between sections */}
+      <AcademyIntro />
+      <section className="bg-blue-50 py-12">
+        <div className="container mx-auto flex flex-col md:flex-row gap-6">
+          {profiles.map((p) => (
+            <ProfileCard
+              key={p.name}
+              name={p.name}
+              title={p.title}
+              subtitle={p.subtitle}
+              imgSrc={p.imgSrc}
+            />
+          ))}
         </div>
-      </div>
+      </section>
     </main>
   );
 }
