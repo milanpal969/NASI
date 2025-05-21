@@ -2,7 +2,7 @@ import React from 'react';
 import HeroSection from '../components/HeroSection';
 import AcademyIntro from '../components/AcademyIntro';
 import ProfileCard from '../components/ProfileCard';
-
+import NewsSection from '../components/NewSection';
 
 export default function LandingPage() {
   const profiles = [
@@ -23,10 +23,10 @@ export default function LandingPage() {
   return (
     <main className="pt-14">
       <HeroSection />
-      <div className="mt-16" /> {/* spacing between sections */}
+      <div className="mt-16" /> {/* spacing */}
       <AcademyIntro />
       <section className="bg-blue-50 py-12">
-        <div className="container mx-auto flex flex-col md:flex-row gap-6">
+        <div className="container mx-auto flex flex-col md:flex-row gap-6 justify-center items-center">
           {profiles.map((p) => (
             <ProfileCard
               key={p.name}
@@ -38,6 +38,7 @@ export default function LandingPage() {
           ))}
         </div>
       </section>
+      <NewsSection />
     </main>
   );
 }
