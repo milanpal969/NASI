@@ -1,3 +1,5 @@
+import audienceImage from '../assets/audience.jpg';
+
 function AcademyIntro() {
   return (
     <section className="bg-white py-12">
@@ -20,9 +22,9 @@ function AcademyIntro() {
         </div>
         <div className="flex-1">
           <img
-            src="/path/to/audience.jpg"
+            src={audienceImage}
             alt="Audience at a conference"
-            className="w-full rounded-lg shadow-lg object-cover h-64 md:h-auto"
+             className="w-full rounded-lg shadow-lg object-cover h-48 md:h-auto"
           />
         </div>
       </div>

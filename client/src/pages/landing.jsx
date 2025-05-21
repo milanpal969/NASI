@@ -3,6 +3,7 @@ import HeroSection from '../components/HeroSection';
 import AcademyIntro from '../components/AcademyIntro';
 import ProfileCard from '../components/ProfileCard';
 import NewsSection from '../components/NewSection';
+import materialIcon from '../assets/person.png';
 
 export default function LandingPage() {
   const profiles = [
@@ -10,13 +11,13 @@ export default function LandingPage() {
       name: 'Prof. Meghnad Saha',
       title: 'Founder President',
       subtitle: 'The First Science Academy of India',
-      imgSrc: '/path/to/meghnad.jpg',
+      imgSrc: materialIcon,
     },
     {
       name: 'Prof. Vinod K. Singh',
       title: 'President',
       subtitle: "Leading the Academy's mission to foster scientific excellence",
-      imgSrc: '/path/to/vinod.jpg',
+      imgSrc: materialIcon,
     },
   ];
 

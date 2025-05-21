@@ -1,11 +1,11 @@
 import React from 'react';
-// import heroImage from '../assets/hero.jpg';
+import heroImage from '../assets/hero_image.jpg';
 
 
 function HeroSection() {
   return (
-    <section className="h-screen bg-cover bg-center flex items-center justify-center" /* style={{ backgroundImage: `url(${heroImage})` }} */>
-      <div className="text-center bg-black bg-opacity-50 p-6 rounded-lg">
+    <section className="h-screen bg-cover bg-center flex items-center justify-center"  style={{ backgroundImage: `url(${heroImage})` }} >
+      <div className="text-center bg-[rgba(0,0,0,0.7)] p-6 rounded-lg">
         <h1 className="text-3xl sm:text-4xl font-bold text-white">
           The National Academy of Sciences, India
         </h1>
